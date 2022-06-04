@@ -84,25 +84,25 @@
         Console.Write(symPlayer);
     }
 
-    static void ChangeDirection(ConsoleKeyInfo key, ref int dirX, ref int dirY)
+    static void ChangeDirection(ConsoleKeyInfo key, ref int directionalX, ref int directionalY)
     {
         switch (key.Key)
         {
             case ConsoleKey.UpArrow:
-                dirX = -1;
-                dirY = 0;
+                directionalX = -1;
+                directionalY = 0;
                 break;
             case ConsoleKey.DownArrow:
-                dirX = 1;
-                dirY = 0;
+                directionalX = 1;
+                directionalY = 0;
                 break;
             case ConsoleKey.LeftArrow:
-                dirX = 0;
-                dirY = -1;
+                directionalX = 0;
+                directionalY = -1;
                 break;
             case ConsoleKey.RightArrow:
-                dirX = 0;
-                dirY = 1;
+                directionalX = 0;
+                directionalY = 1;
                 break;
         }
     }
